@@ -4,7 +4,7 @@ import { appRoutes } from './routes';
 
 const app = Fastfy()
 
-app.register(cors, {origin: ['*']})
+app.register(cors)
 app.register(appRoutes)
 
 app.listen({port: 3333})
